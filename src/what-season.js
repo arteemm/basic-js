@@ -15,11 +15,11 @@ export default function getSeason( date ) {
   if (date === null){
     throw Error;
   }
- 
+  
   if (date === undefined){
    return 'Unable to determine the time of year!';
   }
-  
+  if (Object.entries(date).length > 0) throw new Error('Invalid date!');
   let d = date.getMonth();
   if(d >1 && d < 5){
     return 'spring'

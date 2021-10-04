@@ -10,7 +10,8 @@ export default {
     // remove line with error and write your code here
   },
   addLink( value ) {
-    return `( ${value} )~~`;
+    throw new NotImplementedError('Not implemented');
+    // remove line with error and write your code here
   },
   removeLink(/* position */) {
     throw new NotImplementedError('Not implemented');
